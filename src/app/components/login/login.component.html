@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col"></div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <h3 class="mb-4 text-center">Login</h3>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input name="email" [(ngModel)]="email" type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input [(ngModel)]="password" name="password" type="password" class="form-control">
+            </div>
+            <button (click)="login()" type="button" class="btn btn-primary">Login</button>
+            <div class="row mt-3">
+              <div class="col">
+                <a class="text-decoration-none" routerLink="/register">No Account ? <span>Register</span></a>
+              </div>
+              <div class="col">
+                <a class="text-decoration-none" routerLink="/forgot-password">Forgot Password ?</a>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="card">
+                  <button class="btn" (click)="signInWithGoogle()">
+                    <img height="30px" src="/assets/icons8-google-48.png" alt=""><span>Sign in with google</span>
+                  </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
