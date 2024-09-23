@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { environment } from '../environment/environment';
+import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
